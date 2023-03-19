@@ -68,7 +68,7 @@ const AddExpense = ({ route }) => {
           flexDirection: "row",
           alignItems: "center",
           justifyContent: "space-between",
-          backgroundColor: GlobalColors.colors.lightGray50,
+          backgroundColor: "#D0D0D0",
           borderRadius: 15,
           width: "80%",
           alignSelf: "center",
@@ -140,7 +140,7 @@ const AddExpense = ({ route }) => {
         style={[
           styles.addButton,
           selectedCategory.length < 1 || newExpense < 1
-            ? { backgroundColor: "gray" }
+            ? { backgroundColor: "#D0D0D0" }
             : null,
         ]}
         onPress={() => addExpense(newExpense)}

@@ -42,8 +42,8 @@ export function CategoryRow(props) {
             color: GlobalColors.colors.lightGray,
           }}
         >
-          {props.expenses - props.item.totalSpent > 0
-            ? Math.floor((props.item.totalSpent / props.expenses) * 100) +
+          {props.item.totalSpent > 0
+            ? ((props.item.totalSpent / props.expenses) * 100).toFixed(1) +
               "% of expenses"
             : "0% of expenses"}
         </Text>
